@@ -1,11 +1,13 @@
 package Marx;
-use 5.008001;
-use strict;
-use warnings;
+use v5.16;
+use Moo;
+use Marx::Types -types;
 
 our $VERSION = "0.01";
 
+my @roles = qw();
 
+with $_ for @roles;
 
 1;
 __END__
